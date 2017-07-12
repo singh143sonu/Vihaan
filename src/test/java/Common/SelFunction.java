@@ -18,7 +18,7 @@ public class SelFunction {
         public static String baseURL = "https://github.com/";
 
         public void createDriver() throws MalformedURLException, InterruptedException {
-            System.setProperty("webdriver.gecko.driver", "/src/main/resources/geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", "C:/Users/Jyoysna/Downloads/geckodriver-v0.18.0-win64/geckodriver.exe");
             driver = new FirefoxDriver();
 
             driver.manage().window().maximize();
