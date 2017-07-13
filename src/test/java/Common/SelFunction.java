@@ -15,13 +15,13 @@ public class SelFunction {
         public static WebDriver driver = null;
         public static WebDriverWait waitVar = null;
 
-        public static String baseURL = "https://google.com/";
+        public static String baseURL = "https://github.com/";
 
         public void createDriver() throws MalformedURLException, InterruptedException {
             System.setProperty("webdriver.gecko.driver", "C:/Users/Jyoysna/Downloads/geckodriver-v0.18.0-win64/geckodriver.exe");
             driver = new FirefoxDriver();
 
-            driver.manage().window().maximize();
+            //driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
             driver.get(baseURL);
